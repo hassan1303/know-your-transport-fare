@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Defines the character encoding used by the website -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on phones, tablets and computers -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Short description of the website for search engines -->
+    <meta name="description" content="Know Your Transport Fare helps travellers estimate transport fares and explore popular routes in Nigeria.">
+
+    <!-- Website title displayed in the browser tab -->
+    <title>Know Your Transport Fare | Home</title>
+
+    <!-- Connects the homepage to the external CSS stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Loads the main JavaScript file after the HTML document is parsed -->
+    <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+
+    <!-- ================= HEADER SECTION ================= -->
+    <!-- Contains the website logo, navigation and mobile menu button -->
+    <header class="site-header">
+
+        <div class="container header-content">
+
+            <!-- Website logo and brand name -->
+            <a href="index.html" class="logo">
+                <span class="logo-icon">✈</span>
+                <span>Know Your <strong>Transport Fare</strong></span>
+            </a>
+
+            <!-- Button used to open and close the navigation on smaller screens -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <!-- Main navigation links connecting all five website pages -->
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html" class="active">Home</a>
+                <a href="fares.html">Find a Fare</a>
+                <a href="routes.html">Popular Routes</a>
+                <a href="saved.html">Saved Journeys</a>
+                <a href="about.html">About</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- ================= HERO SECTION ================= -->
+        <!-- Introduces the website and encourages visitors to calculate fares -->
+        <section class="hero-section">
+
+            <div class="container hero-content">
+
+                <!-- Left side: main heading, description and action buttons -->
+                <div class="hero-text">
+
+                    <span class="section-label">
+                        SMARTER TRAVEL STARTS HERE
+                    </span>
+
+                    <h1>
+                        Know Your Transport Fare.
+                        <span>Travel With Confidence.</span>
+                    </h1>
+
+                    <p>
+                        Planning a journey in Nigeria? Estimate your transport
+                        fare, explore popular routes and plan your trip before
+                        leaving home.
+                    </p>
+
+                    <!-- Main links to the fare calculator and popular routes pages -->
+                    <div class="hero-buttons">
+                        <a href="fares.html" class="btn btn-primary">
+                            Check Transport Fare →
+                        </a>
+
+                        <a href="routes.html" class="btn btn-outline">
+                            Explore Routes
+                        </a>
+                    </div>
+
+                    <!-- Small trust message below the buttons -->
+                    <p class="hero-note">
+                        Simple. Convenient. Designed for Nigerian travellers.
+                    </p>
+
+                </div>
+
+
+                <!-- Right side: illustrative journey fare preview card -->
+                <div class="hero-card">
+
+                    <div class="journey-card-header">
+                        <span>FARE ESTIMATE PREVIEW</span>
+                        <span class="status-dot">● Sample</span>
+                    </div>
+
+                    <!-- Journey departure and destination -->
+                    <div class="journey-route">
+
+                        <div class="route-location">
+                            <span class="route-marker">●</span>
+                            <div>
+                                <small>FROM</small>
+                                <h3>Kano</h3>
+                            </div>
+                        </div>
+
+                        <!-- Decorative line connecting the two locations -->
+                        <div class="route-line"></div>
+
+                        <div class="route-location">
+                            <span class="route-marker destination">●</span>
+                            <div>
+                                <small>TO</small>
+                                <h3>Abuja</h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Example fare display; this is not a live transport price -->
+                    <div class="fare-preview">
+                        <small>ILLUSTRATIVE FARE</small>
+                        <h2>₦18,000+</h2>
+                        <p>Example estimate for demonstration only</p>
+                    </div>
+
+                    <!-- Link to the page where visitors can calculate their own fare -->
+                    <a href="fares.html" class="card-link">
+                        Calculate Your Fare →
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================= FEATURES SECTION ================= -->
+        <!-- Explains the main things visitors can do on the website -->
+        <section class="features-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">WHAT YOU CAN DO</span>
+                    <h2>Make Your Journey Easier</h2>
+                    <p>
+                        Useful tools to help you plan your transport journey.
+                    </p>
+                </div>
+
+
+                <!-- Grid containing the three main website features -->
+                <div class="features-grid">
+
+                    <!-- Feature 1: Fare estimation -->
+                    <article class="feature-card">
+                        <div class="feature-icon">₦</div>
+
+                        <h3>Check Transport Fares</h3>
+
+                        <p>
+                            Enter your departure and destination cities to
+                            calculate an illustrative transport fare.
+                        </p>
+
+                        <a href="fares.html">Calculate fare →</a>
+                    </article>
+
+
+                    <!-- Feature 2: Route exploration -->
+                    <article class="feature-card">
+                        <div class="feature-icon">↔</div>
+
+                        <h3>Explore Popular Routes</h3>
+
+                        <p>
+                            Discover sample routes between major Nigerian
+                            cities and compare their estimated fares.
+                        </p>
+
+                        <a href="routes.html">Explore routes →</a>
+                    </article>
+
+
+                    <!-- Feature 3: Saving journeys -->
+                    <article class="feature-card">
+                        <div class="feature-icon">♡</div>
+
+                        <h3>Save Your Journeys</h3>
+
+                        <p>
+                            Keep your calculated journeys in your browser
+                            so you can review them later.
+                        </p>
+
+                        <a href="saved.html">View saved journeys →</a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= CALL TO ACTION SECTION ================= -->
+        <!-- Encourages visitors to start using the fare calculator -->
+        <section class="cta-section">
+
+            <div class="container cta-content">
+
+                <div>
+                    <span class="section-label">PLAN AHEAD</span>
+
+                    <h2>Your Next Journey Starts With a Plan.</h2>
+
+                    <p>
+                        Get an estimated fare before you travel.
+                    </p>
+                </div>
+
+                <!-- Directs visitors to the fare calculator -->
+                <a href="fares.html" class="btn btn-light">
+                    Start Calculating →
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- ================= HOW IT WORKS SECTION ================= -->
+        <!-- Explains the basic steps for using the website -->
+        <section class="how-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">THREE SIMPLE STEPS</span>
+                    <h2>How It Works</h2>
+                    <p>
+                        Estimating your transport fare is easy.
+                    </p>
+                </div>
+
+
+                <div class="steps-grid">
+
+                    <!-- Step 1 -->
+                    <article class="step-card">
+                        <span class="step-number">01</span>
+                        <h3>Select Your Route</h3>
+                        <p>
+                            Choose the city you are travelling from and
+                            the city you want to visit.
+                        </p>
+                    </article>
+
+
+                    <!-- Step 2 -->
+                    <article class="step-card">
+                        <span class="step-number">02</span>
+                        <h3>Calculate Your Fare</h3>
+                        <p>
+                            Select your transport option and number of
+                            passengers to view an estimate.
+                        </p>
+                    </article>
+
+
+                    <!-- Step 3 -->
+                    <article class="step-card">
+                        <span class="step-number">03</span>
+                        <h3>Save Your Journey</h3>
+                        <p>
+                            Save your estimate in your browser and
+                            revisit it whenever you need it.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER SECTION ================= -->
+    <!-- Contains copyright information and links to other pages -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <!-- Footer brand information -->
+            <div class="footer-brand">
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-icon">✈</span>
+                    <span>Know Your <strong>Transport Fare</strong></span>
+                </a>
+
+                <p>
+                    Helping travellers plan journeys with simple
+                    transport fare estimates.
+                </p>
+            </div>
+
+
+            <!-- Footer navigation links -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="fares.html">Find a Fare</a>
+                <a href="routes.html">Popular Routes</a>
+                <a href="saved.html">Saved Journeys</a>
+                <a href="about.html">About</a>
+            </div>
+
+        </div>
+
+
+        <!-- Copyright notice and fare accuracy disclaimer -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>
+                    &copy; 2026 Know Your Transport Fare.
+                    All rights reserved.
+                </p>
+
+                <p>
+                    Fare figures are illustrative estimates, not live
+                    transport prices. Always confirm fares with your
+                    transport provider.
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>
+

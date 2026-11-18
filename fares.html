@@ -1,0 +1,363 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Sets the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Describes the purpose of this page -->
+    <meta name="description" content="Calculate estimated Nigerian transport fares with Know Your Transport Fare.">
+
+    <!-- Browser tab title -->
+    <title>Find a Fare | Know Your Transport Fare</title>
+
+    <!-- Connects this page to the website's CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Loads the main JavaScript module -->
+    <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+
+    <!-- ================= HEADER SECTION ================= -->
+    <!-- Website branding and navigation menu -->
+    <header class="site-header">
+
+        <div class="container header-content">
+
+            <!-- Website logo -->
+            <a href="index.html" class="logo">
+                <span class="logo-icon">✈</span>
+                <span>Know Your <strong>Transport Fare</strong></span>
+            </a>
+
+            <!-- Mobile navigation toggle button -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <!-- Navigation links to the five website pages -->
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="fares.html" class="active">Find a Fare</a>
+                <a href="routes.html">Popular Routes</a>
+                <a href="saved.html">Saved Journeys</a>
+                <a href="about.html">About</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- ================= PAGE INTRODUCTION ================= -->
+        <!-- Introduces the fare calculator to visitors -->
+        <section class="page-hero">
+
+            <div class="container">
+
+                <span class="section-label">FARE CALCULATOR</span>
+
+                <h1>Calculate Your Transport Fare</h1>
+
+                <p>
+                    Choose your journey details below to get an
+                    estimated transport fare for your trip.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- ================= FARE CALCULATOR SECTION ================= -->
+        <!-- Contains the form used to calculate transport fares -->
+        <section class="calculator-section">
+
+            <div class="container calculator-layout">
+
+                <!-- Left column: calculator form -->
+                <div class="calculator-card">
+
+                    <div class="calculator-heading">
+                        <h2>Plan Your Journey</h2>
+
+                        <p>
+                            Enter your travel information to continue.
+                        </p>
+                    </div>
+
+
+                    <!--
+                        Fare calculator form.
+                        JavaScript will read these form values
+                        and calculate the estimated fare.
+                    -->
+                    <form id="fareForm">
+
+                        <!-- Departure city selection -->
+                        <div class="form-group">
+
+                            <label for="departure">
+                                Departure City
+                            </label>
+
+                            <select id="departure" name="departure" required>
+
+                                <option value="">Select departure city</option>
+
+                                <option value="Abuja">Abuja</option>
+                                <option value="Lagos">Lagos</option>
+                                <option value="Kano">Kano</option>
+                                <option value="Kaduna">Kaduna</option>
+                                <option value="Jos">Jos</option>
+                                <option value="Port Harcourt">Port Harcourt</option>
+                                <option value="Ibadan">Ibadan</option>
+                                <option value="Enugu">Enugu</option>
+                                <option value="Maiduguri">Maiduguri</option>
+                                <option value="Benin City">Benin City</option>
+                                <option value="Sokoto">Sokoto</option>
+                                <option value="Ilorin">Ilorin</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Destination city selection -->
+                        <div class="form-group">
+
+                            <label for="destination">
+                                Destination City
+                            </label>
+
+                            <select id="destination" name="destination" required>
+
+                                <option value="">Select destination city</option>
+
+                                <option value="Abuja">Abuja</option>
+                                <option value="Lagos">Lagos</option>
+                                <option value="Kano">Kano</option>
+                                <option value="Kaduna">Kaduna</option>
+                                <option value="Jos">Jos</option>
+                                <option value="Port Harcourt">Port Harcourt</option>
+                                <option value="Ibadan">Ibadan</option>
+                                <option value="Enugu">Enugu</option>
+                                <option value="Maiduguri">Maiduguri</option>
+                                <option value="Benin City">Benin City</option>
+                                <option value="Sokoto">Sokoto</option>
+                                <option value="Ilorin">Ilorin</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Transport type selection -->
+                        <div class="form-group">
+
+                            <label for="transportType">
+                                Transport Type
+                            </label>
+
+                            <select id="transportType" name="transportType" required>
+
+                                <option value="">Choose transport type</option>
+
+                                <option value="bus">Commercial Bus</option>
+                                <option value="luxury">Luxury Bus</option>
+                                <option value="shared">Shared Taxi</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Number of passengers -->
+                        <div class="form-group">
+
+                            <label for="passengers">
+                                Number of Passengers
+                            </label>
+
+                            <input
+                                type="number"
+                                id="passengers"
+                                name="passengers"
+                                min="1"
+                                max="20"
+                                value="1"
+                                required>
+
+                            <small>
+                                Enter a number between 1 and 20.
+                            </small>
+
+                        </div>
+
+
+                        <!-- Button that triggers fare calculation -->
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Calculate Estimated Fare →
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                <!-- Right column: information and result display -->
+                <aside class="calculator-info">
+
+                    <!-- Information about how the calculator works -->
+                    <div class="info-card">
+
+                        <div class="info-icon">✦</div>
+
+                        <h3>Travel With Confidence</h3>
+
+                        <p>
+                            Know Your Transport Fare helps you plan
+                            your journey by providing illustrative
+                            transport fare estimates.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Result container populated by JavaScript -->
+                    <div class="result-card" id="fareResult" aria-live="polite">
+
+                        <div class="result-icon">₦</div>
+
+                        <h3>Your Fare Estimate</h3>
+
+                        <p>
+                            Your estimated fare will appear here after
+                            you calculate your journey.
+                        </p>
+
+                        <!-- JavaScript will insert the result here -->
+                        <div id="resultDetails"></div>
+
+                        <!-- Button for saving the calculated journey -->
+                        <button
+                            type="button"
+                            id="saveJourneyBtn"
+                            class="btn btn-primary"
+                            hidden
+                        >
+                            Save This Journey
+                        </button>
+
+                    </div>
+
+                </aside>
+
+            </div>
+        </section>
+
+
+        <!-- ================= IMPORTANT INFORMATION ================= -->
+        <!-- Explains that fares are sample estimates -->
+        <section class="notice-section">
+
+            <div class="container">
+
+                <div class="notice-card">
+
+                    <span class="notice-icon">ⓘ</span>
+
+                    <div>
+                        <h3>Important Fare Information</h3>
+
+                        <p>
+                            All fares displayed by this project are
+                            illustrative sample estimates for learning
+                            and demonstration purposes. Actual prices
+                            may vary depending on transport companies,
+                            fuel prices, travel dates and other factors.
+                            Please confirm the actual fare with your
+                            transport provider before travelling.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER SECTION ================= -->
+    <!-- Website footer and quick navigation -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <!-- Footer brand -->
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-icon">✈</span>
+                    <span>Know Your <strong>Transport Fare</strong></span>
+                </a>
+
+                <p>
+                    Helping travellers plan journeys with simple
+                    transport fare estimates.
+                </p>
+
+            </div>
+
+
+            <!-- Footer navigation -->
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="fares.html">Find a Fare</a>
+                <a href="routes.html">Popular Routes</a>
+                <a href="saved.html">Saved Journeys</a>
+                <a href="about.html">About</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright and disclaimer -->
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    &copy; 2026 Know Your Transport Fare.
+                    All rights reserved.
+                </p>
+
+                <p>
+                    Transport fares are illustrative estimates only.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Defines the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page description -->
+    <meta name="description" content="View and manage your saved transport journeys and fare estimates.">
+
+    <!-- Browser tab title -->
+    <title>Saved Journeys | Know Your Transport Fare</title>
+
+    <!-- Connects the page to the main CSS stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Loads the main JavaScript module -->
+    <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+
+    <!-- ================= HEADER SECTION ================= -->
+    <!-- Website logo and navigation menu -->
+    <header class="site-header">
+
+        <div class="container header-content">
+
+            <!-- Website logo -->
+            <a href="index.html" class="logo">
+                <span class="logo-icon">✈</span>
+                <span>Know Your <strong>Transport Fare</strong></span>
+            </a>
+
+            <!-- Mobile menu toggle button -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <!-- Navigation links -->
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="fares.html">Find a Fare</a>
+                <a href="routes.html">Popular Routes</a>
+                <a href="saved.html" class="active">Saved Journeys</a>
+                <a href="about.html">About</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- ================= PAGE INTRODUCTION ================= -->
+        <!-- Introduces the saved journeys page -->
+        <section class="page-hero">
+
+            <div class="container">
+
+                <span class="section-label">YOUR TRAVEL PLANS</span>
+
+                <h1>Your Saved Journeys</h1>
+
+                <p>
+                    Keep track of your estimated transport fares
+                    and revisit your travel plans whenever you need them.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SAVED JOURNEYS SECTION ================= -->
+        <section class="saved-section">
+
+            <div class="container">
+
+                <!-- Heading and clear-all action -->
+                <div class="saved-heading">
+
+                    <div>
+                        <span class="section-label">MY JOURNEYS</span>
+
+                        <h2>Journey History</h2>
+
+                        <p>
+                            Your saved fare estimates are stored in
+                            this browser.
+                        </p>
+                    </div>
+
+                    <!-- Button for removing all saved journeys -->
+                    <button
+                        type="button"
+                        id="clearAllBtn"
+                        class="btn btn-danger">
+                        Clear All Journeys
+                    </button>
+
+                </div>
+
+
+                <!-- Summary cards for saved journey statistics -->
+                <div class="saved-stats">
+
+                    <!-- Total number of saved journeys -->
+                    <div class="stat-card">
+
+                        <span class="stat-icon">✈</span>
+
+                        <div>
+                            <small>Saved Journeys</small>
+                            <h3 id="savedCount">0</h3>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Total estimated value of saved journeys -->
+                    <div class="stat-card">
+
+                        <span class="stat-icon">₦</span>
+
+                        <div>
+                            <small>Total Estimated Fare</small>
+                            <h3 id="totalSavedFare">₦0</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= JOURNEY LIST ================= -->
+                <!-- JavaScript will insert saved journey cards here -->
+                <div class="saved-list" id="savedJourneysContainer">
+
+                    <!-- 
+                        Initial empty-state message.
+                        JavaScript will hide this when saved journeys exist.
+                    -->
+                    <div class="empty-state" id="emptyState">
+
+                        <div class="empty-icon">♡</div>
+
+                        <h3>No Saved Journeys Yet</h3>
+
+                        <p>
+                            You have not saved any journeys.
+                            Calculate a fare and save your trip to see
+                            it here.
+                        </p>
+
+                        <!-- Link to the fare calculator -->
+                        <a href="fares.html" class="btn btn-primary">
+                            Calculate Your First Fare →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Message area for JavaScript feedback -->
+                <p
+                    id="savedMessage"
+                    class="form-message"
+                    aria-live="polite">
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CALL TO ACTION SECTION ================= -->
+        <!-- Encourages users to calculate another transport fare -->
+        <section class="cta-section">
+
+            <div class="container cta-content">
+
+                <div>
+
+                    <span class="section-label">PLAN ANOTHER TRIP</span>
+
+                    <h2>Ready for Your Next Journey?</h2>
+
+                    <p>
+                        Calculate another estimated transport fare
+                        and save it for later.
+                    </p>
+
+                </div>
+
+                <!-- Directs visitors to the calculator -->
+                <a href="fares.html" class="btn btn-light">
+                    Calculate New Fare →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER SECTION ================= -->
+    <!-- Website footer and quick links -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <!-- Footer branding -->
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-icon">✈</span>
+                    <span>Know Your <strong>Transport Fare</strong></span>
+                </a>
+
+                <p>
+                    Helping travellers plan journeys with simple
+                    transport fare estimates.
+                </p>
+
+            </div>
+
+
+            <!-- Footer navigation links -->
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="fares.html">Find a Fare</a>
+                <a href="routes.html">Popular Routes</a>
+                <a href="saved.html">Saved Journeys</a>
+                <a href="about.html">About</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright information -->
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    &copy; 2026 Know Your Transport Fare.
+                    All rights reserved.
+                </p>
+
+                <p>
+                    Saved estimates are stored locally in your browser.
+                    Fare figures are illustrative only.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,583 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Defines the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page description -->
+    <meta name="description" content="Learn about Know Your Transport Fare, its purpose, features and contact information.">
+
+    <!-- Browser tab title -->
+    <title>About | Know Your Transport Fare</title>
+
+    <!-- Connects this page to the main CSS stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Loads the main JavaScript module -->
+    <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+
+    <!-- ================= HEADER SECTION ================= -->
+    <!-- Website logo and navigation -->
+    <header class="site-header">
+
+        <div class="container header-content">
+
+            <!-- Website logo -->
+            <a href="index.html" class="logo">
+                <span class="logo-icon">✈</span>
+                <span>Know Your <strong>Transport Fare</strong></span>
+            </a>
+
+            <!-- Mobile navigation button -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <!-- Main navigation links -->
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="fares.html">Find a Fare</a>
+                <a href="routes.html">Popular Routes</a>
+                <a href="saved.html">Saved Journeys</a>
+                <a href="about.html" class="active">About</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- ================= PAGE INTRODUCTION ================= -->
+        <section class="page-hero">
+
+            <div class="container">
+
+                <span class="section-label">GET TO KNOW US</span>
+
+                <h1>About Our Project</h1>
+
+                <p>
+                    Making transport fare estimation simpler
+                    for travellers across Nigeria.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT PROJECT SECTION ================= -->
+        <!-- Explains the purpose of the website -->
+        <section class="about-section">
+
+            <div class="container about-layout">
+
+                <!-- About text -->
+                <div class="about-text">
+
+                    <span class="section-label">WHO WE ARE</span>
+
+                    <h2>Making Journey Planning Easier</h2>
+
+                    <p>
+                        Know Your Transport Fare is a web-based project
+                        designed to help people estimate transport fares
+                        before travelling between Nigerian cities.
+                    </p>
+
+                    <p>
+                        The platform allows users to select their
+                        departure city, destination, transport type
+                        and number of passengers to calculate an
+                        illustrative fare estimate.
+                    </p>
+
+                    <p>
+                        Users can also explore popular routes and save
+                        their journeys in their browser for future reference.
+                    </p>
+
+                    <a href="fares.html" class="btn btn-primary">
+                        Calculate Your Fare →
+                    </a>
+
+                </div>
+
+
+                <!-- Project information card -->
+                <div class="about-visual">
+
+                    <div class="about-visual-icon">✈</div>
+
+                    <h3>Know Before You Go</h3>
+
+                    <p>
+                        Plan your journey with useful transport
+                        fare estimates.
+                    </p>
+
+                    <div class="about-highlight">
+                        <span>₦</span>
+                        <div>
+                            <strong>Fare Estimation</strong>
+                            <small>Simple and convenient</small>
+                        </div>
+                    </div>
+
+                    <div class="about-highlight">
+                        <span>↔</span>
+                        <div>
+                            <strong>Route Exploration</strong>
+                            <small>Discover sample city routes</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================= PROJECT OBJECTIVES ================= -->
+        <!-- Describes the main goals of the project -->
+        <section class="objectives-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">OUR PURPOSE</span>
+
+                    <h2>Project Objectives</h2>
+
+                    <p>
+                        The project focuses on making transport
+                        information easier to explore.
+                    </p>
+
+                </div>
+
+
+                <div class="features-grid">
+
+                    <!-- Objective 1 -->
+                    <article class="feature-card">
+
+                        <div class="feature-icon">₦</div>
+
+                        <h3>Fare Estimation</h3>
+
+                        <p>
+                            Provide users with illustrative transport
+                            fare estimates based on their selected routes.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Objective 2 -->
+                    <article class="feature-card">
+
+                        <div class="feature-icon">⌖</div>
+
+                        <h3>Route Information</h3>
+
+                        <p>
+                            Present examples of popular journeys
+                            connecting major Nigerian cities.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Objective 3 -->
+                    <article class="feature-card">
+
+                        <div class="feature-icon">♡</div>
+
+                        <h3>Journey Management</h3>
+
+                        <p>
+                            Allow users to save and manage their
+                            estimated journeys using Local Storage.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================= HOW IT WORKS SECTION ================= -->
+        <!-- Summarises the steps involved in using the platform -->
+        <section class="how-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">GETTING STARTED</span>
+
+                    <h2>How to Use the Website</h2>
+
+                </div>
+
+
+                <div class="steps-grid">
+
+                    <article class="step-card">
+                        <span class="step-number">01</span>
+
+                        <h3>Visit the Fare Calculator</h3>
+
+                        <p>
+                            Open the Find a Fare page to begin
+                            planning your journey.
+                        </p>
+                    </article>
+
+
+                    <article class="step-card">
+                        <span class="step-number">02</span>
+
+                        <h3>Enter Journey Details</h3>
+
+                        <p>
+                            Select your departure city, destination,
+                            transport type and passengers.
+                        </p>
+                    </article>
+
+
+                    <article class="step-card">
+                        <span class="step-number">03</span>
+
+                        <h3>Calculate and Save</h3>
+
+                        <p>
+                            View your estimated fare and save
+                            your journey for later.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================= FAQ SECTION ================= -->
+        <!-- Answers common questions about the website -->
+        <section class="faq-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">NEED HELP?</span>
+
+                    <h2>Frequently Asked Questions</h2>
+
+                    <p>
+                        Find answers to common questions.
+                    </p>
+
+                </div>
+
+
+                <div class="faq-list">
+
+                    <!-- FAQ 1 -->
+                    <details class="faq-item">
+
+                        <summary>
+                            What is Know Your Transport Fare?
+                        </summary>
+
+                        <p>
+                            It is a web-based project that helps users
+                            estimate transport fares between selected
+                            Nigerian cities.
+                        </p>
+
+                    </details>
+
+
+                    <!-- FAQ 2 -->
+                    <details class="faq-item">
+
+                        <summary>
+                            Are the displayed fares real-time prices?
+                        </summary>
+
+                        <p>
+                            No. The fares are illustrative sample
+                            estimates used for demonstration.
+                            They are not connected to live transport
+                            operators or booking services.
+                        </p>
+
+                    </details>
+
+
+                    <!-- FAQ 3 -->
+                    <details class="faq-item">
+
+                        <summary>
+                            Can I save my calculated journeys?
+                        </summary>
+
+                        <p>
+                            Yes. You can save your journeys, and the
+                            website stores them in your browser using
+                            Local Storage.
+                        </p>
+
+                    </details>
+
+
+                    <!-- FAQ 4 -->
+                    <details class="faq-item">
+
+                        <summary>
+                            Can I book a bus or pay for a ticket here?
+                        </summary>
+
+                        <p>
+                            No. This project provides fare estimation
+                            only. It does not support ticket booking,
+                            seat reservations or payments.
+                        </p>
+
+                    </details>
+
+
+                    <!-- FAQ 5 -->
+                    <details class="faq-item">
+
+                        <summary>
+                            Does the website work on mobile phones?
+                        </summary>
+
+                        <p>
+                            Yes. The website is designed to adapt
+                            to mobile phones, tablets and computers.
+                        </p>
+
+                    </details>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================= CONTACT SECTION ================= -->
+        <!-- Provides a form for users to submit their messages -->
+        <section class="contact-section">
+
+            <div class="container contact-layout">
+
+                <!-- Contact information -->
+                <div class="contact-info">
+
+                    <span class="section-label">GET IN TOUCH</span>
+
+                    <h2>We Would Love to Hear From You</h2>
+
+                    <p>
+                        Have a question, suggestion or feedback
+                        about Know Your Transport Fare?
+                        Use the form to share your message.
+                    </p>
+
+                    <div class="contact-detail">
+                        <span>✉</span>
+                        <div>
+                            <strong>Contact Form</strong>
+                            <small>Send your feedback through this page</small>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <span>💬</span>
+                        <div>
+                            <strong>Suggestions</strong>
+                            <small>Share ideas for improving the project</small>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Contact form -->
+                <div class="contact-card">
+
+                    <h3>Send Us a Message</h3>
+
+                    <!--
+                        JavaScript will validate this form.
+                        This demonstration form does not send an email.
+                    -->
+                    <form id="contactForm">
+
+                        <!-- User's name -->
+                        <div class="form-group">
+
+                            <label for="contactName">Full Name</label>
+
+                            <input
+                                type="text"
+                                id="contactName"
+                                name="name"
+                                placeholder="Enter your full name"
+                                required>
+
+                        </div>
+
+
+                        <!-- User's email address -->
+                        <div class="form-group">
+
+                            <label for="contactEmail">Email Address</label>
+
+                            <input
+                                type="email"
+                                id="contactEmail"
+                                name="email"
+                                placeholder="Enter your email address"
+                                required>
+
+                        </div>
+
+
+                        <!-- Message subject -->
+                        <div class="form-group">
+
+                            <label for="contactSubject">Subject</label>
+
+                            <input
+                                type="text"
+                                id="contactSubject"
+                                name="subject"
+                                placeholder="Enter message subject"
+                                required>
+
+                        </div>
+
+
+                        <!-- Message body -->
+                        <div class="form-group">
+
+                            <label for="contactMessage">Your Message</label>
+
+                            <textarea
+                                id="contactMessage"
+                                name="message"
+                                rows="5"
+                                placeholder="Write your message here..."
+                                required></textarea>
+
+                        </div>
+
+
+                        <!-- Button for submitting the contact form -->
+                        <button
+                            type="submit"
+                            class="btn btn-primary btn-full">
+                            Send Message →
+                        </button>
+
+                    </form>
+
+
+                    <!-- JavaScript displays validation or success feedback here -->
+                    <p
+                        id="contactFeedback"
+                        class="form-message"
+                        aria-live="polite">
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER SECTION ================= -->
+    <!-- Website branding and navigation links -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-icon">✈</span>
+                    <span>Know Your <strong>Transport Fare</strong></span>
+                </a>
+
+                <p>
+                    Helping travellers plan journeys with simple
+                    transport fare estimates.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="fares.html">Find a Fare</a>
+                <a href="routes.html">Popular Routes</a>
+                <a href="saved.html">Saved Journeys</a>
+                <a href="about.html">About</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright and project disclaimer -->
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    &copy; 2026 Know Your Transport Fare.
+                    All rights reserved.
+                </p>
+
+                <p>
+                    Fare estimates are illustrative only.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
+

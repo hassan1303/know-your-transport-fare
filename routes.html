@@ -1,0 +1,529 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Defines the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page description for search engines -->
+    <meta name="description" content="Explore popular Nigerian transport routes and view illustrative fare estimates.">
+
+    <!-- Browser tab title -->
+    <title>Popular Routes | Know Your Transport Fare</title>
+
+    <!-- Connects the page to the main stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Loads the main JavaScript module -->
+    <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+
+    <!-- ================= HEADER SECTION ================= -->
+    <!-- Website logo and navigation menu -->
+    <header class="site-header">
+
+        <div class="container header-content">
+
+            <!-- Website branding -->
+            <a href="index.html" class="logo">
+                <span class="logo-icon">✈</span>
+                <span>Know Your <strong>Transport Fare</strong></span>
+            </a>
+
+            <!-- Mobile navigation button -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <!-- Navigation links -->
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="fares.html">Find a Fare</a>
+                <a href="routes.html" class="active">Popular Routes</a>
+                <a href="saved.html">Saved Journeys</a>
+                <a href="about.html">About</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- ================= PAGE INTRODUCTION ================= -->
+        <!-- Introduces the popular routes page -->
+        <section class="page-hero">
+
+            <div class="container">
+
+                <span class="section-label">EXPLORE NIGERIA</span>
+
+                <h1>Discover Popular Routes</h1>
+
+                <p>
+                    Explore sample transport routes between Nigerian cities
+                    and check illustrative fare estimates for your journey.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ROUTE SEARCH SECTION ================= -->
+        <!-- Allows users to search and filter available routes -->
+        <section class="routes-section">
+
+            <div class="container">
+
+                <!-- Search and filter heading -->
+                <div class="section-heading">
+                    <span class="section-label">FIND YOUR ROUTE</span>
+
+                    <h2>Where Are You Travelling?</h2>
+
+                    <p>
+                        Search for a city or filter routes by departure location.
+                    </p>
+                </div>
+
+
+                <!-- Search and filter controls -->
+                <div class="route-search">
+
+                    <!-- Text input used to search route names -->
+                    <div class="form-group search-group">
+
+                        <label for="routeSearch">
+                            Search Routes
+                        </label>
+
+                        <input
+                            type="search"
+                            id="routeSearch"
+                            placeholder="Search Abuja, Kano, Lagos..."
+                            aria-label="Search popular routes">
+
+                    </div>
+
+
+                    <!-- Dropdown used to filter routes by departure city -->
+                    <div class="form-group filter-group">
+
+                        <label for="departureFilter">
+                            Filter by Departure City
+                        </label>
+
+                        <select id="departureFilter">
+
+                            <option value="all">All Departure Cities</option>
+                            <option value="Abuja">Abuja</option>
+                            <option value="Lagos">Lagos</option>
+                            <option value="Kano">Kano</option>
+                            <option value="Kaduna">Kaduna</option>
+                            <option value="Jos">Jos</option>
+                            <option value="Port Harcourt">Port Harcourt</option>
+                            <option value="Ibadan">Ibadan</option>
+                            <option value="Enugu">Enugu</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Dropdown used to sort routes by sample fare -->
+                    <div class="form-group sort-group">
+
+                        <label for="fareSort">
+                            Sort by Fare
+                        </label>
+
+                        <select id="fareSort">
+
+                            <option value="default">Default Order</option>
+                            <option value="low">Lowest Fare First</option>
+                            <option value="high">Highest Fare First</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= ROUTE CARDS ================= -->
+                <!-- JavaScript will display route cards inside this container -->
+                <div class="routes-grid" id="routesContainer">
+
+                    <!-- Route 1: Abuja to Lagos -->
+                    <article class="route-card"
+                        data-from="Abuja"
+                        data-to="Lagos"
+                        data-fare="25000">
+
+                        <div class="route-card-top">
+                            <span class="route-tag">POPULAR ROUTE</span>
+                            <span class="route-symbol">↗</span>
+                        </div>
+
+                        <div class="route-card-location">
+
+                            <div>
+                                <small>FROM</small>
+                                <h3>Abuja</h3>
+                            </div>
+
+                            <span class="route-arrow">→</span>
+
+                            <div>
+                                <small>TO</small>
+                                <h3>Lagos</h3>
+                            </div>
+
+                        </div>
+
+                        <div class="route-card-footer">
+
+                            <div>
+                                <small>Sample fare per passenger</small>
+                                <h2>₦25,000</h2>
+                            </div>
+
+                            <a href="fares.html" class="route-button">
+                                Estimate →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Route 2: Kano to Abuja -->
+                    <article class="route-card"
+                        data-from="Kano"
+                        data-to="Abuja"
+                        data-fare="18000">
+
+                        <div class="route-card-top">
+                            <span class="route-tag">POPULAR ROUTE</span>
+                            <span class="route-symbol">↗</span>
+                        </div>
+
+                        <div class="route-card-location">
+
+                            <div>
+                                <small>FROM</small>
+                                <h3>Kano</h3>
+                            </div>
+
+                            <span class="route-arrow">→</span>
+
+                            <div>
+                                <small>TO</small>
+                                <h3>Abuja</h3>
+                            </div>
+
+                        </div>
+
+                        <div class="route-card-footer">
+
+                            <div>
+                                <small>Sample fare per passenger</small>
+                                <h2>₦18,000</h2>
+                            </div>
+
+                            <a href="fares.html" class="route-button">
+                                Estimate →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Route 3: Lagos to Ibadan -->
+                    <article class="route-card"
+                        data-from="Lagos"
+                        data-to="Ibadan"
+                        data-fare="8000">
+
+                        <div class="route-card-top">
+                            <span class="route-tag">POPULAR ROUTE</span>
+                            <span class="route-symbol">↗</span>
+                        </div>
+
+                        <div class="route-card-location">
+
+                            <div>
+                                <small>FROM</small>
+                                <h3>Lagos</h3>
+                            </div>
+
+                            <span class="route-arrow">→</span>
+
+                            <div>
+                                <small>TO</small>
+                                <h3>Ibadan</h3>
+                            </div>
+
+                        </div>
+
+                        <div class="route-card-footer">
+
+                            <div>
+                                <small>Sample fare per passenger</small>
+                                <h2>₦8,000</h2>
+                            </div>
+
+                            <a href="fares.html" class="route-button">
+                                Estimate →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Route 4: Abuja to Kaduna -->
+                    <article class="route-card"
+                        data-from="Abuja"
+                        data-to="Kaduna"
+                        data-fare="10000">
+
+                        <div class="route-card-top">
+                            <span class="route-tag">POPULAR ROUTE</span>
+                            <span class="route-symbol">↗</span>
+                        </div>
+
+                        <div class="route-card-location">
+
+                            <div>
+                                <small>FROM</small>
+                                <h3>Abuja</h3>
+                            </div>
+
+                            <span class="route-arrow">→</span>
+
+                            <div>
+                                <small>TO</small>
+                                <h3>Kaduna</h3>
+                            </div>
+
+                        </div>
+
+                        <div class="route-card-footer">
+
+                            <div>
+                                <small>Sample fare per passenger</small>
+                                <h2>₦10,000</h2>
+                            </div>
+
+                            <a href="fares.html" class="route-button">
+                                Estimate →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Route 5: Port Harcourt to Enugu -->
+                    <article class="route-card"
+                        data-from="Port Harcourt"
+                        data-to="Enugu"
+                        data-fare="12000">
+
+                        <div class="route-card-top">
+                            <span class="route-tag">POPULAR ROUTE</span>
+                            <span class="route-symbol">↗</span>
+                        </div>
+
+                        <div class="route-card-location">
+
+                            <div>
+                                <small>FROM</small>
+                                <h3>Port Harcourt</h3>
+                            </div>
+
+                            <span class="route-arrow">→</span>
+
+                            <div>
+                                <small>TO</small>
+                                <h3>Enugu</h3>
+                            </div>
+
+                        </div>
+
+                        <div class="route-card-footer">
+
+                            <div>
+                                <small>Sample fare per passenger</small>
+                                <h2>₦12,000</h2>
+                            </div>
+
+                            <a href="fares.html" class="route-button">
+                                Estimate →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Route 6: Jos to Abuja -->
+                    <article class="route-card"
+                        data-from="Jos"
+                        data-to="Abuja"
+                        data-fare="9000">
+
+                        <div class="route-card-top">
+                            <span class="route-tag">POPULAR ROUTE</span>
+                            <span class="route-symbol">↗</span>
+                        </div>
+
+                        <div class="route-card-location">
+
+                            <div>
+                                <small>FROM</small>
+                                <h3>Jos</h3>
+                            </div>
+
+                            <span class="route-arrow">→</span>
+
+                            <div>
+                                <small>TO</small>
+                                <h3>Abuja</h3>
+                            </div>
+
+                        </div>
+
+                        <div class="route-card-footer">
+
+                            <div>
+                                <small>Sample fare per passenger</small>
+                                <h2>₦9,000</h2>
+                            </div>
+
+                            <a href="fares.html" class="route-button">
+                                Estimate →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Message shown when no routes match the search -->
+                <p id="noRoutesMessage" class="empty-message" hidden>
+                    No routes found. Try another city or search term.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ROUTE INFORMATION ================= -->
+        <!-- Provides additional guidance about the displayed routes -->
+        <section class="notice-section">
+
+            <div class="container">
+
+                <div class="notice-card">
+
+                    <span class="notice-icon">ⓘ</span>
+
+                    <div>
+
+                        <h3>About These Route Estimates</h3>
+
+                        <p>
+                            The routes and fares on this page are sample
+                            project data. They are not live prices from
+                            transport companies. Actual fares may change
+                            depending on the operator and travel conditions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER SECTION ================= -->
+    <!-- Footer brand information and navigation links -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-icon">✈</span>
+                    <span>Know Your <strong>Transport Fare</strong></span>
+                </a>
+
+                <p>
+                    Helping travellers plan journeys with simple
+                    transport fare estimates.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="fares.html">Find a Fare</a>
+                <a href="routes.html">Popular Routes</a>
+                <a href="saved.html">Saved Journeys</a>
+                <a href="about.html">About</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright information -->
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    &copy; 2026 Know Your Transport Fare.
+                    All rights reserved.
+                </p>
+
+                <p>
+                    Fare figures are illustrative estimates only.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
+

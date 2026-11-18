@@ -1,0 +1,213 @@
+
+{
+    "project": "Know Your Transport Fare",
+
+    "currency": "NGN",
+
+    "description": "Illustrative Nigerian intercity transport routes and fares.",
+
+    "lastUpdated": "2026-11-17",
+
+    "notice": "All fares and distances are sample estimates. They are not live transport prices.",
+
+    "routes": [
+
+        {
+            "id": 1,
+            "from": "Abuja",
+            "to": "Lagos",
+            "distance": 750,
+            "fare": 25000,
+            "transportTypes": [
+                "bus",
+                "luxury",
+                "shared"
+            ]
+        },
+
+        {
+            "id": 2,
+            "from": "Kano",
+            "to": "Abuja",
+            "distance": 350,
+            "fare": 18000,
+            "transportTypes": [
+                "bus",
+                "luxury",
+                "shared"
+            ]
+        },
+
+        {
+            "id": 3,
+            "from": "Lagos",
+            "to": "Ibadan",
+            "distance": 130,
+            "fare": 8000,
+            "transportTypes": [
+                "bus",
+                "luxury",
+                "shared"
+            ]
+        },
+
+        {
+            "id": 4,
+            "from": "Abuja",
+            "to": "Kaduna",
+            "distance": 190,
+            "fare": 10000,
+            "transportTypes": [
+                "bus",
+                "luxury",
+                "shared"
+            ]
+        },
+
+        {
+            "id": 5,
+            "from": "Port Harcourt",
+            "to": "Enugu",
+            "distance": 200,
+            "fare": 12000,
+            "transportTypes": [
+                "bus",
+                "luxury",
+                "shared"
+            ]
+        },
+
+        {
+            "id": 6,
+            "from": "Jos",
+            "to": "Abuja",
+            "distance": 280,
+            "fare": 9000,
+            "transportTypes": [
+                "bus",
+                "luxury",
+                "shared"
+            ]
+        },
+
+        {
+            "id": 7,
+            "from": "Lagos",
+            "to": "Benin City",
+            "distance": 320,
+            "fare": 14000,
+            "transportTypes": [
+                "bus",
+                "luxury",
+                "shared"
+            ]
+        },
+
+        {
+            "id": 8,
+            "from": "Kaduna",
+            "to": "Kano",
+            "distance": 230,
+            "fare": 11000,
+            "transportTypes": [
+                "bus",
+                "luxury",
+                "shared"
+            ]
+        },
+
+        {
+            "id": 9,
+            "from": "Abuja",
+            "to": "Jos",
+            "distance": 280,
+            "fare": 9000,
+            "transportTypes": [
+                "bus",
+                "luxury",
+                "shared"
+            ]
+        },
+
+        {
+            "id": 10,
+            "from": "Enugu",
+            "to": "Port Harcourt",
+            "distance": 200,
+            "fare": 12000,
+            "transportTypes": [
+                "bus",
+                "luxury",
+                "shared"
+            ]
+        },
+
+        {
+            "id": 11,
+            "from": "Kano",
+            "to": "Maiduguri",
+            "distance": 500,
+            "fare": 22000,
+            "transportTypes": [
+                "bus",
+                "luxury",
+                "shared"
+            ]
+        },
+
+        {
+            "id": 12,
+            "from": "Abuja",
+            "to": "Sokoto",
+            "distance": 700,
+            "fare": 24000,
+            "transportTypes": [
+                "bus",
+                "luxury",
+                "shared"
+            ]
+        },
+
+        {
+            "id": 13,
+            "from": "Ibadan",
+            "to": "Ilorin",
+            "distance": 150,
+            "fare": 9000,
+            "transportTypes": [
+                "bus",
+                "luxury",
+                "shared"
+            ]
+        },
+
+        {
+            "id": 14,
+            "from": "Abuja",
+            "to": "Enugu",
+            "distance": 450,
+            "fare": 17000,
+            "transportTypes": [
+                "bus",
+                "luxury",
+                "shared"
+            ]
+        },
+
+        {
+            "id": 15,
+            "from": "Lagos",
+            "to": "Port Harcourt",
+            "distance": 610,
+            "fare": 22000,
+            "transportTypes": [
+                "bus",
+                "luxury",
+                "shared"
+            ]
+        }
+
+    ]
+
+}
+
